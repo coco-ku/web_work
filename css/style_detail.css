@@ -580,7 +580,6 @@ a.tag:hover {
     text-align: center;
     font-size: 1rem;
 }
-
 @media (min-width: 768px) and (max-width: 1024px) {
 
     /* 平板直立樣式 */
@@ -605,6 +604,7 @@ a.tag:hover {
 
         font-size: 1rem;
     }
+
     .bolg_conten {
         width: 100%;
     }
@@ -661,21 +661,23 @@ a.tag:hover {
         font-size: 1.5rem;
         padding: 0 0px;
     }
-.box {
-    max-width: 100%;
-}
 
-.page_chang {
-    height: 50px;
-    margin-bottom: 20px;
-}
+    .box {
+        max-width: 100%;
+    }
 
-.page_chang a.next:link,
-.page_chang a.back:link {
-    font-size: 1rem;
-}
+    .page_chang {
+        height: 50px;
+        margin-bottom: 20px;
+    }
 
-    .pupolar, .newtext_btn {
+    .page_chang a.next:link,
+    .page_chang a.back:link {
+        font-size: 1rem;
+    }
+
+    .pupolar,
+    .newtext_btn {
         display: none;
     }
 
@@ -729,15 +731,17 @@ a.tag:hover {
         font-weight: 400;
         font-size: 1rem;
     }
-    .myinput {
-    max-width:90% ;
-    padding: 10px 30px 8px 40px;
-    border: solid .1px rgb(96, 96, 96);
-    border-radius: 35px;
-    background-color: #fff;
-    font-size: 1.2rem;
-    outline: none;
-    margin-left: 0;
-    margin-right:0 ;
 
-}}
+    .myinput {
+        max-width: 90%;
+        padding: 10px 30px 8px 40px;
+        border: solid .1px rgb(96, 96, 96);
+        border-radius: 35px;
+        background-color: #fff;
+        font-size: 1.2rem;
+        outline: none;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+}
