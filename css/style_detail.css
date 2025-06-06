@@ -421,6 +421,7 @@ a.read_btn:hover {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    display: flex;
 }
 
 .page_chang .back i {
@@ -615,6 +616,10 @@ a.tag:hover {
 
 @media only screen and (max-width: 768px) {
     /* 手機樣式 */
+
+    .pupolar {
+            display: none;
+        }
     .m_t_0 {
         margin-top: 20%;
     }
