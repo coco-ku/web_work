@@ -134,44 +134,7 @@ header li {
     font-size: 1.5em;
 }
 
-@media only screen and (max-width: 768px) {
-      /* 手機樣式 */
-    header {
-            flex-direction: column;
-        }
 
-.img-info img{max-width: 100%;}
-    .main_img {
-         max-width: 100%;
-        flex-direction: column;
-    }
-
-    .page_title {
-        margin: 10px 10%;
-        max-width: 100%;
-        padding-bottom: 40px;
-        padding-top: 0px;
-    }
-
-    .page_title h1 {
-        padding: 0px 0;
-        margin: 20px 0px;
-        font-size: 5rem;
-    }
-
-    .page_title p {
-        letter-spacing: 3px;
-        font-weight: bold;
-        font-size: 1.7rem;
-        padding: 0 10px;
-    }
-
-    .box {
-       max-width: 100%;
-
-    }
-
-}
 
 /*----部落格內容頁 header img----*/
 
@@ -268,32 +231,6 @@ a.read_btn:hover {
     color: #ffffff;
     border: 1px solid #474747;
     background: #5b5b5b;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* 平板直立樣式 */
-    header {
-        flex-direction: column;
-    }
-
-    .img-info {
-        max-width: 100%;
-        display: flex;
-        padding-bottom: 60px;
-
-    }
-
-    .img-info p {
-        line-height: 1.6rem;
-        padding-left: 5px;
-        max-width: 100%;
-    }
-
-.tag_box span {
-
-    font-size: 1rem;
-}
-
 }
 
 /*-----部落格內容頁-conten-----*/
@@ -415,13 +352,12 @@ a.read_btn:hover {
 .page_chang {
     height: 90px;
     margin-bottom: 50px;
-    width: 80%;
+    max-width: 100%;
     margin-top: 30px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
     display: flex;
+    justify-content: center;
+
 }
 
 .page_chang .back i {
@@ -439,7 +375,7 @@ a.read_btn:hover {
     color: #000000;
     text-decoration: none;
     border-radius: 99em;
-    padding: 3px 5px;
+    padding: 3px 3px;
     margin-left: 10px;
     margin-top: 30px;
 }
@@ -450,7 +386,7 @@ a.read_btn:hover {
     color: #b50097;
     text-decoration: none;
     border-radius: 99em;
-    padding: 3px 5px;
+    padding:3px 3px;
     margin-left: 10px;
     margin-top: 30px;
 
@@ -461,7 +397,7 @@ a.read_btn:hover {
     font: 1.2em;
     font-weight: bold;
     padding: 5px;
-    margin: 8px;
+    margin: 4px;
     color: #2c2c2c;
     padding-bottom: 10px;
     padding-top: 8px;
@@ -550,9 +486,8 @@ a.read_btn:hover {
     margin-left: 10px;
     padding: 4px;
     text-decoration: none;
-    border-radius: 10px;
-}
 
+}
 .bolg_card>li {
     padding: 5px 10px;
     margin: 0px;
@@ -594,66 +529,6 @@ a.tag:link {
 a.tag:hover {
     color: #dfbb5a;
     text-decoration: none;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* 平板直立樣式 */
-    .bolg_conten {
-        width: 100%;
-    }
-
-    .bolg_list {
-        align-items: center;
-
-    }
-
-    .bolg_card {
-        max-width: 45%;
-    }
-
-
-}
-
-@media only screen and (max-width: 768px) {
-    /* 手機樣式 */
-
-    .pupolar {
-            display: none;
-        }
-    .m_t_0 {
-        margin-top: 20%;
-    }
-
-    .bolg_conten {
-        width: 100%;
-    }
-
-    .bolg_list {
-
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    .bolg_card {
-        max-width: 100%;
-    }
-
-    .icon_l_r {
-        margin: 0 auto;
-        font-size: 2.5rem;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        bottom: 0;
-    }
-        .img-info {
-        max-width: 100%;
-        display: flex;
-        padding: 0px 0px 30px 0px;
-
-    }
-
 }
 
 .u_line {
@@ -702,13 +577,137 @@ a.tag:hover {
     text-align: center;
     font-size: 1rem;
 }
-@media only screen and (max-width: 1024px) {
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* 平板直立樣式 */
+    header {
+        flex-direction: column;
+    }
+
+    .img-info {
+        max-width: 100%;
+        display: flex;
+        padding-bottom: 60px;
+
+    }
+
+    .img-info p {
+        line-height: 1.6rem;
+        padding-left: 5px;
+        max-width: 100%;
+    }
+
+    .tag_box span {
+
+        font-size: 1rem;
+    }
+    .bolg_conten {
+        width: 100%;
+    }
+
+    .bolg_list {
+        align-items: center;
+
+    }
+
+    .bolg_card {
+        max-width: 45%;
+    }
+
     .bolg_detail {
         width: 90%;
     }
 }
+
 @media only screen and (max-width: 768px) {
-      /* 手機樣式 */
+
+    /* 手機樣式 */
+    header {
+        flex-direction: column;
+    }
+
+    .img-info img {
+        max-width: 100%;
+    }
+
+    .main_img {
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .page_title {
+        margin: 10px 10%;
+        max-width: 100%;
+        padding-bottom: 40px;
+        padding-top: 0px;
+    }
+
+    .page_title h1 {
+        padding: 0px 0;
+        margin: 20px 0px;
+        font-size: 5rem;
+    }
+
+    .page_title p {
+        letter-spacing: 3px;
+        font-weight: bold;
+        font-size: 1.7rem;
+        padding: 0 10px;
+    }
+.box {
+    max-width: 100%;
+}
+
+.page_chang {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.page_chang a.next:link,
+.page_chang a.back:link {
+    font-size: 1rem;
+}
+
+    .pupolar, .newtext_btn {
+        display: none;
+    }
+
+    .m_t_0 {
+        margin-top: 20%;
+    }
+
+    .bolg_conten {
+        width: 100%;
+    }
+
+    .bolg_list {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .bolg_card {
+        max-width: 100%;
+    }
+
+    .icon_l_r {
+        margin: 0 auto;
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 0;
+    }
+
+    .img-info {
+        max-width: 100%;
+        display: flex;
+        padding: 0px 0px 30px 0px;
+
+    }
+
 
     .bolg_detail {
         width: 90%;
@@ -724,9 +723,14 @@ a.tag:hover {
         font-weight: 400;
         font-size: 1rem;
     }
+    .myinput {
+    max-width:100% ;
+    padding: 10px 30px 8px 40px;
+    border: solid .1px rgb(96, 96, 96);
+    border-radius: 35px;
+    background-color: #fff;
+    font-size: 1.2rem;
+    outline: none;
 
-    .page_chang {
-        height: 50px;
-        margin-bottom: 20px;
-    }
+
 }
